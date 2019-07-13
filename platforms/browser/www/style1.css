@@ -1,0 +1,30 @@
+body{
+	background: #005C5E;
+	text-align: center;
+}
+button{
+	background: #FFA500;
+	color: #ffffff;
+	border:0;
+	height: 40px;
+	width: 100px;
+	border-radius: 5px;
+	font-size: 25px;
+	font-family: arial;
+	margin-top: 5%;
+}
+h1{
+	color: #FFA500;
+	border: 5px solid #FFA500;
+	padding: 5px 0;
+	margin: 5% 15%;
+	
+	border-radius: 5px;
+}
+a{
+	text-decoration: none;
+	color: #005C5E;
+}
+#contnr{
+	margin-top: 60px;
+}

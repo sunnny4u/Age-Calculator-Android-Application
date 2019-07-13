@@ -1,0 +1,40 @@
+
+#container{
+	height: 500px;
+	padding-top: 30px;
+	
+}
+input{
+	width: 40px;
+	border-radius: 5px;
+	text-align: center;
+}
+h1 , h2{
+	color: #FFA500;
+	padding: 5px 0;
+	border: 2px solid #FFA500;
+	border-radius: 3px;
+}
+h2{
+	margin: 0 25%;
+}
+h1{
+	margin: 0 20%;
+}
+body{
+	background: #005C5E;
+	text-align: center;
+}
+.btn{
+	background: orange;
+	color: #ffffff;
+	border:0;
+	height: 40px;
+	width: 100px;
+	border-radius: 5px;
+	font-size: 15px;
+	font-family: arial;
+}
+#resultprint{
+	border-radius: 5px;
+}

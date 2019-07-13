@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Age Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    <body>
+    	<section id="container">
+	    	<script type="text/javascript" src="cordova.js"></script>
+	        <header id="header"><h1>Enter Date:</h1></header><br>
+	        <form id="form1">
+		        <h2>From :</h2><br>  <input type="number" name="fDDd" placeholder="DD" size="2" width="40px">
+		        <input type="number" name="fMMm" placeholder="MM" size="2" width="40px">
+		        <input type="number" name="fYYYYy" placeholder="YYYY" size="4" width="80px">
+	        </form><br>
+	        <form id="form2">
+		        <h2>To :</h2><br> <input type="number" name="tDDd" placeholder="DD" size="2" width="40px">
+		        <input type="number" name="tMMm" placeholder="MM" size="2" width="40px">
+		        <input type="number" name="tYYYYy" placeholder="YYYY" size="4" width="80px">
+	        </form><br>
+	        <button class="btn" onclick="calculation()"><b>Calculate</b></button><br><br>
+	        <textarea id="resultprint" cols="30" rows="4"></textarea><br><br>
+	        <a  style="none" href="index.html"><img src="img/ghkk.png"></a>
+	    </section>
+	    <script>
+	    	function calculation(){
+	    		var day,month,year,x,y;
+	    		x = document.getElementById("form1");
+	    		y = document.getElementById("form2");
+
+	    		var a = parseInt(x.elements["fDDd"].value);
+	    		var b = parseInt(x.elements["fMMm"].value);
+	    		var c = parseInt(x.elements["fYYYYy"].value);
+	    		var d = parseInt(y.elements["tDDd"].value);
+	    		var e = parseInt(y.elements["tMMm"].value);
+	    		var f = parseInt(y.elements["tYYYYy"].value);
+
+
+
+	    		if (d < a) {
+	    			e = e - 1;
+	    			d = d + 30;
+	    		}
+	    		if (e < b) {
+	    			f = f -1;
+	    			e = e + 12;
+	    		}
+	    		day = d - a;
+	    		month = e - b;
+	    		year = f - c;
+
+
+	    		if(year < 0){
+	    			document.getElementById("resultprint").innerHTML = "Error..! Wrong Input.";
+	    		}
+	    		else{
+	    			
+	    			document.getElementById("resultprint").innerHTML = year+" Years "+month+" Months "+day+" Days.";
+	    		}
+	    		
+	   	    	}
+	    </script>
+        
+    </body>
+</html>
